@@ -1,3 +1,3 @@
 <div align="center">
-  <h1>BlogChain Rust</h1>
+  <h1>Blogсhain Rust</h1>
 </div>
