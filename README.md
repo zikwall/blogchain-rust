@@ -24,5 +24,5 @@
 
 - `$ rustup default nightly | rustup override set nightly`
 - `$ cargo install diesel_cli --no-default-features --features "mysql"`
-- `$ echo DATABASE_URL=DATABASE_URL=mysql://blogchain:123456@localhost/blogchain > .env`
+- `$ echo DATABASE_URL=mysql://blogchain:123456@localhost/blogchain > .env`
 - `$ cargo run`
