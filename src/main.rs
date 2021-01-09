@@ -1,6 +1,9 @@
 #![feature(proc_macro_hygiene, decl_macro)]
 
 #[macro_use] extern crate rocket;
+#[macro_use] extern crate diesel;
+
+mod db;
 
 #[get("/")]
 fn index() -> &'static str {
@@ -8,5 +11,8 @@ fn index() -> &'static str {
 }
 
 fn main() {
-    rocket::ignite().mount("/", routes![index]).launch();
+    rocket::ignite()
+        .manage(db::connect())
+        .mount("/", routes![index])
+        .launch();
 }

@@ -8,3 +8,5 @@ edition = "2018"
 
 [dependencies]
 rocket = "0.4.6"
+diesel = { version = "1.4.4", features = ["mysql", "r2d2"] }
+dotenv = "0.15.0"
